@@ -1,0 +1,18 @@
+<%= form_with(model: [ @discussion, @discussion.comments.build ], local: true) do |form| %>
+   
+   <div class="field">
+    <%= form.label "Conteúdo: " %>
+     <p class="emoji-picker-container">
+      <%= form.text_area :comment, cols: "30", rows: "10", data: { emojiable: true } %>
+     </p>
+  </div>
+   <div class="field">
+    <%= form.label "Imagem: " %>
+      <%= form.text_field :url_image%>
+  </div>
+  
+   <div class="actions">
+    <%= form.submit "Salvar", class: "waves-effect waves-light btn" %>
+  </div>
+  
+<% end %>

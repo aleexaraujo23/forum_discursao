@@ -1,0 +1,54 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/alexdearaujo/RubymineProjects/Espresso/forum_discursao/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alexdearaujo/RubymineProjects/Espresso/forum_discursao/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/alexdearaujo/RubymineProjects/Espresso/forum_discursao/app/helpers/application_helper.rb": [
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/alexdearaujo/RubymineProjects/Espresso/forum_discursao/app/helpers/comments_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alexdearaujo/RubymineProjects/Espresso/forum_discursao/app/helpers/discussions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alexdearaujo/RubymineProjects/Espresso/forum_discursao/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/alexdearaujo/RubymineProjects/Espresso/forum_discursao/app/models/discussion.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1573438163
+  }
+}

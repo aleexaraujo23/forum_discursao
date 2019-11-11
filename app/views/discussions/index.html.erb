@@ -1,0 +1,28 @@
+<h4>Discusões</h4>
+
+<table class="striped">
+  <thead>
+    <tr>
+      <th>Título</th>
+    <!--  <th>Conteúdo</th>-->
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @discussions.each do |discussion| %>
+      <tr>
+        <td><%= discussion.headline %></td>
+     <!--   <td><%= discussion.content %></td> -->
+        <td><%= "Publicado à " + time_ago_in_words(discussion.created_at) +" por " %><span class="blue-text blue lighten-5"><%= discussion.user.email %></span></td>
+        <td><%= link_to 'Mostrar', discussion %></td>
+        <td><%= link_to 'Editar', edit_discussion_path(discussion) %></td>
+        <td><%= link_to 'Deletar', discussion, method: :delete, data: { confirm: ' Tem certeza ?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Post', new_discussion_path, class: "waves-effect waves-light btn" %>

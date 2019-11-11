@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Forum News</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="navbar-fixed">
+      <nav class="blue darken-2">
+        <div class="nav-wrapper">
+          <div class="container">
+            <div class="container">
+            <a href="#!" class="brand-logo">Forun</a>
+              <%= link_to  "Forum News!", root_path, class: "brand-logo" %>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a>É verdade essas afirmações</a>
+             </ul>
+             <ul class="right hide-on-med-and-down">
+             <i class="material-icons">question_answer</i>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <ul class="brand-logo center">
+   <i class="material-icons">warning</i>
+   <a>Por questões de versão do software. Atualize as páginas que contenham 'Área de Texto' para aparecer a caixinha de Emojis.</a>
+  </ul>
+  
+    <p class="navbar-text float-right">
+      <% if user_signed_in? %>
+       Logado como: <strong><%= current_user.email %></strong>.
+       <%= link_to "Sair", destroy_user_session_path, method: :delete,  :class => 'navbar-link'  %>
+      <% else %>  
+       <%= link_to "Registrar-se", new_user_registration_path, :class => 'navbar-link'  %> |
+       <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+      <% end %>
+    </p>
+  
+
+    <div class="container">
+      
+      <% if notice %>
+        <div class="alert alert-success"><%= notice %></div>
+      <% end %>
+      
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %> 
+      
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<div class='comment'>
+   
+<br>
+<br>
+   
+<div class="col s12 m7">
+    <div class="card horizontal">
+     
+        <% if comment.url_image? %>
+         <img <%= image_tag comment.url_image, width:80, heidth:80 %>
+        <% end %>
+      
+      <div class="card-stacked">
+        <div class="card-content">
+        <p> <%= comment.comment %> </p>
+        </div>
+      </div>
+</div>
+    <label class="green-text text-darken-2"><p> <%= comment.user.email %> </p></label>
+
+
+    
+    <td><%= link_to 'Editar Resposta',  edit_discussion_comment_path(comment.discussion, comment) %> </td> | 
+    <td><%= link_to 'Deletar Resposta',  [comment.discussion, comment], method: :delete, data: { confirm: ' Tem certeza ?' } %> </td>
+       
+</div>
