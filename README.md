@@ -6,6 +6,10 @@
 * Aplicando o MVC
 * DRY
 * Clean code
+* Rspec
+* Guard-rspec
+* Simplecov
+
 
 Este software trata-se de um Forum, nomeado "Forum News!", no qual tem um intuito
 de fornecer uma aplicação para debate, perguntas e respostas para os usuários.
