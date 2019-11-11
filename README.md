@@ -32,7 +32,7 @@ de fornecer uma aplicação para debate, perguntas e respostas para os usuários
 https://nameless-brook-58986.herokuapp.com/
 
 
-Instruções para Executar em Ambiente de Desenvolvimento
+**- Instruções para Executar em Ambiente de Desenvolvimento**
 
 1. Execute o  `bundle install` para Atualizar as Gems no Projeto
 2. Execute o `rails db:create` e `rails db:migrate` para criar e migrar o DB 
