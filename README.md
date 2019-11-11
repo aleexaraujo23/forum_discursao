@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Projeto Forum News! v.1**
 
-Things you may want to cover:
+* Desenvolvido em Ruby on Rails
+* Aplicando o MVC
+* DRY
+* Clean code
 
-* Ruby version
+Este software trata-se de um Forum, nomeado "Forum News!", no qual tem um intuito
+de fornecer uma aplicação para debate, perguntas e respostas para os usuários.
 
-* System dependencies
+**- Documentação Funcional**
 
-* Configuration
+*  Usuários nao cadastrados podem Apenas visualizar os Posts.
+*  Apenas Usuários Cadastrados podem postar e comentar no Forum.
+*  A cada comentario ou Post fica salvo o email do usuário que o fez.
+*  Cada usuário cadastrado pode criar ou comentar quatos posts quiser.
+*  Cada Post pode conter Título, Texto e uma imagem.
+*  Cada Comentário pode conter Texto e uma imagem.
+  
 
-* Database creation
+**- Aviso de versionamento**
 
-* Database initialization
+*  Devido ainda ser a v1, para visualizar a caixa de emojis na área de Texto, atualize a página para visualizar.
 
-* How to run the test suite
+**- Link do Projeto no Heroku**
+https://nameless-brook-58986.herokuapp.com/
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+Instruções para Executar em Ambiente de Desenvolvimento
 
-* ...
+1. Execute o  `bundle install` para Atualizar as Gems no Projeto
+2. Execute o `rails db:create` e `rails db:migrate` para criar e migrar o DB 
+3. Execute o `rails s` para subir o Servidor
